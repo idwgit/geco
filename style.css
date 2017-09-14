@@ -1,17 +1,16 @@
 /*
-	Theme Name: Genesis Sample
-	Description: This is the sample theme created for the Genesis Framework.
-	Author: StudioPress
-	Author URI: http://www.studiopress.com/
-	Version: 2.0.0
- 
-	Tags: black, orange, white, one-column, two-columns, three-columns, fixed-width, custom-menu, full-width-template, sticky-post, theme-options, threaded-comments, translation-ready
- 
+	Theme Name: Gecovich
+	Description: This is the theme for Texas Center for Occlusal Studies
+	Author: Infinity Dental Web
+	Author URI: http://www.infinitydentalweb.com/
+	Version: 1
+Happy Tidings
+	Tags:
 	Template: genesis
-	Template Version: 2.0.0
- 
-	License: GPL-2.0+
-	License URI: http://www.opensource.org/licenses/gpl-license.php
+	Template Version: 2.0.1
+
+	License: Copyright Infinity Dental Web
+
 */
 
 
@@ -67,7 +66,7 @@
 /*
 HTML5 Reset
 ---------------------------------------------------------------------------------------------------- */
-
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display:700italic);
 /* Baseline Normalize
 	normalize.css v2.1.2 | MIT License | git.io/normalize
 --------------------------------------------- */
@@ -127,19 +126,23 @@ Defaults
 
 /* Typographical Elements
 --------------------------------------------- */
-
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
 html {
 	font-size: 62.5%; /* 10px browser default */
 }
 
 body {
-	background-color: #f5f5f5;
+	background-color: #fff;
 	color: #666;
-	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	//font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	font-size: 16px;
 	font-size: 1.6rem;
 	font-weight: 300;
 	line-height: 1.625;
+}
+body.home {
+		background-color: #f1f0ea;
 }
 
 a,
@@ -236,42 +239,42 @@ h3,
 h4,
 h5,
 h6 {
-	color: #333;
-	font-family: Lato, sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	font-weight: 700;
 	line-height: 1.2;
 	margin: 0 0 16px;
 	margin: 0 0 1.6rem;
+	color: #333;
 }
 
 h1 {
-	font-size: 36px;
-	font-size: 3.6rem;
-}
-
-h2 {
 	font-size: 30px;
 	font-size: 3rem;
 }
 
-h3 {
-	font-size: 24px;
-	font-size: 2.4rem;
-}
-
-h4 {
+h2 {
 	font-size: 20px;
 	font-size: 2rem;
 }
 
-h5 {
+h3 {
+	font-size: 20px;
+	font-size: 2rem;
+}
+
+h4 {
 	font-size: 18px;
 	font-size: 1.8rem;
 }
 
-h6 {
+h5 {
 	font-size: 16px;
 	font-size: 1.6rem;
+}
+
+h6 {
+	font-size: 12px;
+	font-size: 1.2rem;
 }
 
 /* Objects
@@ -301,11 +304,11 @@ textarea {
 	border: 1px solid #ddd;
 	border-radius: 3px;
 	box-shadow: 1px 1px 3px #eee inset;
-	color: #999;
-	font-size: 14px;
-	font-size: 1.4rem;
-	padding: 16px;
-	padding: 1.6rem;
+	color: #000;
+	font-size: 12px;
+	font-size: 1.2rem;
+	padding: 10px;
+	padding: 1rem;
 	width: 100%;
 }
 
@@ -330,9 +333,8 @@ input[type="reset"],
 input[type="submit"],
 .button,
 .entry-content .button {
-	background-color: #333;
+	background-color: #884d78;
 	border: none;
-	box-shadow: none;
 	color: #fff;
 	cursor: pointer;
 	padding: 16px 24px;
@@ -341,13 +343,21 @@ input[type="submit"],
 	width: auto;
 }
 
+button a {
+    color: #fff;
+}
+
+button:hover {
+    color: #555;
+}
+
 button:hover,
 input:hover[type="button"],
 input:hover[type="reset"],
 input:hover[type="submit"],
 .button:hover,
 .entry-content .button:hover {
-	background-color: #f15123;
+	background-color: #999;
 }
 
 .entry-content .button:hover {
@@ -412,8 +422,8 @@ Structure and Layout
 
 .site-inner {
 	clear: both;
-	padding-top: 40px;
-	padding-top: 4rem;
+	padding-top: 20px;
+	padding-top: 2rem;
 }
 
 /* Column Widths and Positions
@@ -440,7 +450,7 @@ Structure and Layout
 
 .content {
 	float: right;
-	width: 740px;
+	width: 600px;
 }
 
 .content-sidebar .content,
@@ -463,7 +473,7 @@ Structure and Layout
 
 .sidebar-primary {
 	float: right;
-	width: 360px;
+	width: 500px;
 }
 
 .sidebar-content .sidebar-primary,
@@ -697,6 +707,7 @@ img.alignright,
 	margin-bottom: 24px;
 	margin-bottom: 2.4rem;
 	text-transform: uppercase;
+	color: #fff;
 }
 
 .sidebar .widget-title a {
@@ -789,10 +800,10 @@ div.gform_wrapper input[type="email"],
 div.gform_wrapper input[type="text"],
 div.gform_wrapper textarea,
 div.gform_wrapper .ginput_complex label {
-	font-size: 16px;
-	font-size: 1.6rem;
-	padding: 16px;
-	padding: 1.6rem;
+	font-size: 12px;
+	font-size: 1.2rem;
+	padding: 12px;
+	padding: 1.2rem;
 }
 
 div.gform_wrapper .ginput_complex label {
@@ -806,8 +817,8 @@ div.gform_wrapper form li {
 }
 
 div.gform_wrapper .gform_footer input[type="submit"] {
-	font-size: 14px;
-	font-size: 1.4rem;
+	font-size: 12px;
+	font-size: 1.2rem;
 }
 
 /* Jetpack
@@ -823,13 +834,14 @@ Site Header
 ---------------------------------------------------------------------------------------------------- */
 
 .site-header {
-	background-color: #fff;
+	/*background: url(images/topshadow.png) no-repeat top center;*/
+
 }
 
-.site-header .wrap {
+/*.site-header .wrap {
 	padding: 40px 0;
 	padding: 4rem 0;
-}
+}*/
 
 /* Title Area
 --------------------------------------------- */
@@ -885,10 +897,6 @@ Site Header
 
 /* Logo, hide text */
 
-.header-image .site-header .wrap {
-	background: url(images/logo.png) no-repeat left;
-	padding: 0;
-}
 
 .header-image .site-title a {
 	float: left;
@@ -931,30 +939,43 @@ Site Navigation
 
 .genesis-nav-menu .menu-item {
 	display: inline-block;
-	text-align: left;
+	text-align: center;
 }
 
 .genesis-nav-menu a {
 	border: none;
-	color: #999;
+	color: #fff;
 	display: block;
-	padding: 28px 24px;
-	padding: 2.8rem 2.4rem;
+	padding: 40px 24px 28px 24px;
+	padding: 4rem 1.3rem 2.5rem 1.3rem;
 	position: relative;
+	font-size: 16px;
+	font-weight: bold;
+	font-family: 'open sans';
 }
 
-.genesis-nav-menu a:hover,
-.genesis-nav-menu .current-menu-item > a,
+.genesis-nav-menu li:hover,
+.genesis-nav-menu .current-menu-item > a
+ {
+
+}
+.hoverred {
+	background: url(images/nav-active.png) no-repeat, #38509f;
+	background-position: 50% 10%;
+}
 .genesis-nav-menu .sub-menu .current-menu-item > a:hover {
-	color: #333;
+	background: #38509f;
+	background-image: none;
+	color: #ccc;
 }
 
 .genesis-nav-menu .sub-menu .current-menu-item > a {
-	color: #999;
+	background-image: none;
 }
 
 .genesis-nav-menu > .menu-item > a {
 	text-transform: uppercase;
+	font-size: 14px;
 }
 
 .genesis-nav-menu .sub-menu {
@@ -971,15 +992,18 @@ Site Navigation
 }
 
 .genesis-nav-menu .sub-menu a {
-	background-color: #fff;
-	border: 1px solid #eee;
-	border-top: none;
+	background: #38509f;
 	font-size: 14px;
 	font-size: 1.4rem;
 	padding: 16px 20px;
 	padding: 1.6rem 2rem;
 	position: relative;
 	width: 200px;
+	color: #fff;
+}
+.genesis-nav-menu .sub-menu a:hover {
+	/*background: url(images/menupointer.jpg) left center no-repeat #38509f;*/
+	color: #ccc;
 }
 
 .genesis-nav-menu .sub-menu .sub-menu {
@@ -993,6 +1017,7 @@ Site Navigation
 .genesis-nav-menu .menu-item:hover > .sub-menu {
 	left: auto;
 	opacity: 1;
+	color: #fff;
 }
 
 .genesis-nav-menu > .first > a {
@@ -1031,34 +1056,48 @@ Site Navigation
 --------------------------------------------- */
 
 .site-header .sub-menu {
-	border-top: 1px solid #eee;
+	//border-top: 1px solid #eee;
 }
 
 .site-header .sub-menu .sub-menu {
-	margin-top: -55px;
+	//margin-top: -55px;
 }
 
 /* Primary Navigation
 --------------------------------------------- */
 
 .nav-primary {
-	background-color: #333;
+
 }
 
 .nav-primary a:hover,
 .nav-primary .current-menu-item > a {
 	color: #fff;
+	font-size: 16px;
+	font-weight: bold;
 }
 
 .nav-primary .sub-menu a:hover {
-	color: #333;
+	//color: #333;
 }
 
 /* Secondary Navigation
 --------------------------------------------- */
 
 .nav-secondary {
-	background-color: #fff;
+	background-color: none;
+	color: #fff;
+	padding: 3px 5px;
+}
+.nav-secondary a {
+	color: #fff;
+	padding: 0 5px;
+}
+
+.nav-secondary .genesis-nav-menu li:hover,
+.nav-secondary .genesis-nav-menu .current-menu-item > a
+ {
+	background: none;
 }
 
 
@@ -1070,12 +1109,12 @@ Content Area
 --------------------------------------------- */
 
 .entry {
-	background-color: #fff;
 	border-radius: 3px;
 	margin-bottom: 40px;
 	margin-bottom: 4rem;
-	padding: 40px 40px 24px;
-	padding: 4rem 4rem 2.4rem;
+	//padding: 40px 40px 24px;
+	//padding: 4rem 4rem 2.4rem;
+	min-height: 800px;
 }
 
 .entry-content a {
@@ -1287,11 +1326,14 @@ Sidebars
 ---------------------------------------------------------------------------------------------------- */
 
 .sidebar {
-	color: #999;
+	color: #fff;
+	background: url('images/geco-sidebar-bg.png') no-repeat;
+	background-size: cover;
+	min-height: 350px;
 }
 
 .sidebar a {
-	border-bottom: 1px solid #ddd;
+	color: #fff;
 }
 
 .sidebar p:last-child {
@@ -1310,12 +1352,13 @@ Sidebars
 }
 
 .sidebar .widget {
-	background-color: #fff;
-	border-radius: 3px;
-	margin-bottom: 40px;
-	margin-bottom: 4rem;
-	padding: 40px;
-	padding: 4rem;
+	border-radius: 0;
+	//margin-bottom: 40px;
+	//margin-bottom: 4rem;
+	//padding: 20px;
+	//padding: 2rem;
+	padding-top: 20px;
+	text-align: center;
 }
 
 .sidebar .enews-widget {
@@ -1393,24 +1436,417 @@ Site Footer
 ---------------------------------------------------------------------------------------------------- */
 
 .site-footer {
-	background-color: #fff;
-	color: #999;
+	background:url(images/geco-footer-bg.jpg) right bottom no-repeat fixed;
+	color: #fff;
 	font-size: 14px;
 	font-size: 1.4rem;
-	padding: 40px 0;
-	padding: 4rem 0;
 	text-align: center;
+	min-height: 300px;
+	width: 100%;
+	position: relative;
 }
 
-.site-footer a {
-	border-bottom: 1px solid #ddd;
-}
 
 .site-footer p {
 	margin-bottom: 0;
+	color: #fff;
+}
+/*----------------------------------------Region CSS----------------------------------------------------*/
+.widget_addr {
+	font-family: 'Open Sans', sans-serif;
+	width: 100%;
+	padding-left: 20px;
+	padding-bottom: 55px;
+	padding-top: 20px;
+	background: url(images/sidebarbg.png) no-repeat;
+	background-size: 100%;
+	font-size: 14px;
+	text-align: left;
+	max-width: 500px;
+	margin:0 auto;
 }
 
+.widget_center{
+	width: 100%;
+	text-align: center;
+}
 
+.widget_addr div {
+	margin-bottom: 20px;
+}
+
+.widget_addr h3 {
+	margin-bottom: 25px;
+}
+
+#regionlogo {
+	//margin-top: 18px;
+	max-width: 290px;
+}
+
+.entry-title {
+	/*display: none;*/
+}
+
+.button_gray {opacity:0 !important;}
+
+.button_gray:hover {opacity:1 !important;}
+
+#sliderwrap {
+	position: relative;
+}
+
+.sliderbar {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	line-height: 1.5;
+	width: 100%;
+	background:#615d5b;
+	padding: 5px 0;
+	color: #fff;
+	text-align: center;
+}
+
+.sliderbar .call span {
+	font-size: 18px;
+	font-weight: normal;
+}
+
+.sliderbar .call {
+	font-size: 18px;
+	line-height: 1.2;
+	text-align: center;
+  color: #fff;
+	display: flex;
+}
+
+.sliderbar .wrap .one-half.call {
+	border-right: none;
+}
+.phone-num {
+    width: 415px;
+    margin: 0 auto;
+}
+
+.kall8-num {
+    max-width: 390px;
+    margin: 0 auto;
+}
+
+.phone-icon {
+    float: left
+}
+
+.phone-text {
+    padding-top: 12px;
+    color: #fff;
+}
+
+.phone-text a {
+    color: #fff;
+}
+
+.hero-text {
+    margin-top: 18%;
+    float: left;
+    text-align: center;
+    -webkit-animation-duration: 1.5s;
+    -webkit-animation-delay: .5s;
+    -moz-animation-duration: 1.5s;
+    -moz-animation-delay: .5s;
+    -ms-animation-duration: 1.5s;
+    -ms-animation-delay: .5s;
+}
+
+.hero-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+		color: #fff;
+}
+
+.hero-tag {}
+
+.hero-text button {
+    margin-top: 20px;
+}
+#innerheadwrap img {
+	border-top: 4px solid #000;
+	border-bottom: 4px solid #000;
+}
+
+#intro1 {
+	min-height: 50px;
+}
+#intro2 {
+	margin-top: 10px;
+	height: 300px;
+	padding-top: 50px;
+}
+.red {
+	color: #ab1308;
+}
+.entry-content ul li {
+	list-style: none;
+    padding-left: 25px;
+    margin-bottom: 10px;
+}
+#region-footer {
+	padding-top: 10px;
+	margin:0 auto;
+	text-align: center;
+	color: #fff;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	background: rgba(24,24,24,.7);
+
+}
+#region-footer h1,
+#region-footer h2,
+#region-footer p {
+	color: #fff;
+}
+body #region-footer a {
+	color: #fff;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+#region-footer #menu-footer-menu a {
+	font-size: 14px;
+	text-transform: none;
+}
+
+#menu-footer-menu li {
+	border-right: 2px solid #fff;
+}
+
+#menu-footer-menu li:last-child {
+	border-right: none;
+}
+
+#footer-icons img {
+	float: left;
+	margin-right: 30px;
+}
+
+#region-footer .rights {
+	text-align: right;
+}
+
+#region-footer .creds {
+	text-align: left;
+}
+
+.site-header {
+	width: 100%;
+	min-height: 110px;
+}
+
+.home .site-header {
+    width: 100%;
+	height: 898px;
+    background: url(images/geco-header-bg.jpg) no-repeat right top;
+    background-size: cover;
+}
+
+.site-container {
+	padding-top: 0;
+}
+.home .site-container {
+	padding-top: 0;
+}
+.entry-content a {
+	color: #ab1308;
+	font-weight: 900;
+	border-bottom: 0;
+	text-decoration: none;
+}
+.video {
+	margin-bottom: 50px;
+	width: 560px;
+	height: 315px;
+	box-shadow: 3px 6px 6px #000;
+
+}
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px; height: 0; overflow: hidden;
+    padding-left: 15px;
+    margin-bottom: 50px;
+    box-shadow: 3px 6px 6px #000;
+    text-align: center;
+}
+video {
+	height: auto;
+	width: 100%;
+}
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.registration .entry-content ul li {
+	background-image: none;
+}
+.registration {
+	color: #000;
+}
+.class {
+	background-color: rgba(0,0,0,.5);
+	//background-color: #F1F0EA;
+	//border: 2px solid #ab1308;
+	box-shadow:         0px 0px 5px 5px rgba(50, 50, 50, 0.35) inset;
+	border-radius: 3px;
+	margin-top: 20px;
+	color: #fff;
+	width: 20%;
+	padding: 10px;
+	text-align: center;
+	min-height: 500px;
+	float: left;
+	margin-right: 10px;
+}
+.class p {
+	font-weight: bold;
+	font-size: 16px;
+	font-size: 1.6rem;
+}
+.class h3 {
+	color: #fff;
+	font-size: 26px;
+	margin-top: 20px;
+}
+.gallery .entry-content img {
+	margin: 20px 5px 10px;
+	border-radius: 4px;
+	box-shadow: 0px 0px 1px 1px rgba(50, 50, 50, 0.6);
+}
+.gallery #fancybox-title-over {
+	display: none;
+}
+.sidebysideimages {
+	margin-left: 5%;
+	border-radius: 4px;
+	border: 1px solid #999;
+	padding: 2px;
+}
+.reg-forms ul li{
+	background: none;
+}
+.reg-forms .site-header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 140px;
+	background: rgba(241,240,234,1);
+	border-bottom: 3px solid rgba(0,0,0,.5);
+	border-top: 5px solid #000;
+}
+#social-icons {
+	background-color: #000;
+	min-height: 100px;
+	width: 100%;
+}
+#social-icons img {
+	float: left;
+	padding-top: 10px;
+	padding-right: 50px;
+}
+#social-icons .social-wrap {
+	margin:0 auto;
+	max-width: 500px;
+}
+#special-event {
+	text-align: center;
+	background: #fff;
+	border-radius: 3px;
+	border: 2px solid #ccc;
+	margin-bottom: 20px;
+	box-shadow: 4px 4px 4px #999;
+}
+.profile hr {
+	background-color: #ab1308;
+	height: 2px;
+	color: #ab1308;
+	margin-top: -15px;
+}
+.profile h3 {
+	color: #ab1308;
+	font-weight: bold;
+}
+.profile #gform_submit_button_20 {
+	margin-left: 50px;
+}
+.soldout {
+transform:rotate(-17deg);
+-ms-transform:rotate(-17deg); /* IE 9 */
+-webkit-transform:rotate(-17deg); /* Opera, Chrome, and Safari */
+margin-top: -400px;
+}
+#registration {
+	background-color: rgba(0,0,0,.5);
+	//background-color: #F1F0EA;
+	//border: 2px solid #ab1308;
+	box-shadow:         0px 0px 5px 5px rgba(50, 50, 50, 0.35) inset;
+	border-radius: 3px;
+	margin-top: 20px;
+	color: #fff;
+	width: 100%;
+	padding: 10px;
+	text-align: center;
+	min-height: 500px;
+	float: left;
+	margin-right: 10px;
+}
+#registration p {
+	font-weight: bold;
+	font-size: 12px;
+	font-size: 1.2rem;
+	margin-top: -10px;
+}
+#registration h2 {
+	color: #fff;
+	font-size: 26px;
+}
+#registration h3 {
+	color: #fff;
+	font-size: 24px;
+	margin-top: -10px;
+}
+.sidebar h2,
+.sidebar h3 {
+	color: #fff;
+	font-size: 24px;
+}
+.sidebar p{
+	font-size: 12px;
+	font-weight: bold;
+}
+.site-header .wrap {
+	max-width: 100%;
+}
+.sticky-menu {
+	margin-top: 100px;
+	background-color: rgba(136, 77, 120, 0.8);
+}
+.sticky-menu .wrap {
+	max-width: 1140px;
+	margin: 0 auto;
+	display: flex;
+	flex-flow: row nowrap;
+}
+#fb-button {
+	padding-top: 30px;
+}
 /*
 Media Queries
 ---------------------------------------------------------------------------------------------------- */
@@ -1428,10 +1864,38 @@ Media Queries
 }
 
 @media only screen and (max-width: 1139px) {
+	.site-container {
+		padding-top: 0;
+		text-align: center;
+	}
+	.home .site-container {
+		padding-top: 0;
+	}
+	.site-header {
+	position: relative;
+	width: 100%;
+	height: 140px;
+	background: rgba(241,240,234,1);
+	border-bottom: none;
+	}
+	#regionlogo {
+		margin-top:0;
+		margin: auto;
+	}
+	#intro2 {
+		background: none;
+	}
+	#sliderwrap {
+		height: 100%;
+	}
+	#footer-icons {
+		display: none;
+	}
 
 	.site-inner,
 	.wrap {
 		max-width: 960px;
+		//min-height: 800px;
 	}
 
 	.content-sidebar-sidebar .content-sidebar-wrap,
@@ -1458,6 +1922,20 @@ Media Queries
 	.title-area {
 		width: 300px;
 	}
+
+    .home .site-header {
+        height: 500px;
+        background-size: cover;
+        background-position: top right;
+    }
+
+    .site-header .wrap {
+        padding: 20px;
+    }
+
+    .hero-text {
+        display: none;
+    }
 
 }
 
@@ -1510,6 +1988,7 @@ Media Queries
 	.sidebar .widget,
 	.site-header {
 		padding: 0;
+		z-index: 1;
 	}
 
 	.genesis-nav-menu li,
@@ -1529,8 +2008,8 @@ Media Queries
 	.genesis-nav-menu a,
 	.genesis-nav-menu > .first > a,
 	.genesis-nav-menu > .last > a {
-		padding: 20px 16px;
-		padding: 2rem 1.6rem;
+		//padding: 20px 16px;
+		//padding: 2rem 1.6rem;
 	}
 
 	.site-header .search-form {
@@ -1584,5 +2063,34 @@ Media Queries
 		margin: 0;
 		width: 100%;
 	}
+	.class {
+		float: none;
+		width: 100%;
+	}
+	.social-wrap img {
+		display: none;
+	}
 
+	.widget_addr {
+		background: #828283;
+		padding-bottom: 20px;
+		padding-left: 0;
+		margin-bottom: 20px;
+		text-align: center;
+	}
+
+	#region-footer .rights {
+		text-align: center;
+	}
+
+	#region-footer .creds {
+	text-align: center;
+}
+}
+
+@media only screen and (max-width: 480px) {
+    .home .site-header {
+        background-size: cover;
+        background-position: -500px;
+    }
 }

@@ -1,0 +1,19 @@
+{
+  "transport": "ftp",
+  "hostname": "infinitytestsite.com",
+  "port": "21",
+  "username": "idwtest",
+  "password": "Bellmore0)ne",
+  "target": "/public_html/gecovich/wp-content/themes/gecovich/",
+  "ignore": [
+    ".remote-sync.json",
+    ".git/**"
+  ],
+  "watch": [
+    "/css/styles.css",
+    "/index.html"
+  ],
+  "uploadOnSave": true,
+  "useAtomicWrites": false,
+  "deleteLocal": false
+}
